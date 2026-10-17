@@ -8,11 +8,8 @@
 </head>
 <body>
 
-<!--
-【网管小周】员工通道初始口令规则：成立年份 + 门店编号（三位，不足补零）。
-例：1999年 + 012店 = 1999012。
-这条上线前记得删……先留着，免得他们又打电话来问。
--->
+<!-- 网管备忘：①员工通道口令 = 门店编号 + 开业月份(两位)，例：门店047、2015年9月开业 → 04709 -->
+<!-- ②数据对接备忘：每周五17:00前将本周报名家长名单同步至启航教育，对接明细页 internal/partner.html，口令 = 咨询热线后4位 -->
 
 <div class="topbar">
   <div class="wrap">
@@ -48,7 +45,7 @@
       </div>
       <div class="info-card">
         <h3>联系电话</h3>
-        <p>固话：0371-66881247</p>
+        <p>热线：0371-66881247</p>
         <p>手机：155****1123（微信同号）</p>
         <p>咨询时间：8:30 - 20:00</p>
       </div>
@@ -59,10 +56,10 @@
         <p>法定节假日休息</p>
       </div>
       <div class="info-card">
-        <h3>商务合作</h3>
-        <p>益聪生物营养专线：400-8896-315</p>
-        <p>联系人：李经理</p>
-        <p>（仅限门店合作洽谈，家长咨询请拨打固话）</p>
+        <h3>入托咨询</h3>
+        <p>招生对象：小学一至六年级</p>
+        <p>支持随到随托、按月缴费</p>
+        <p>到店参观请提前一天电话预约</p>
       </div>
     </div>
   </div>
@@ -82,6 +79,19 @@
   </div>
 </div>
 
+<div class="section">
+  <div class="wrap">
+    <h2 class="sec-title">意见箱</h2>
+    <p class="sec-sub">您的建议与意见，我们会认真阅读并及时回复</p>
+    <form id="fbForm" style="max-width:640px;margin:0 auto;background:#fff;border-radius:10px;padding:28px;box-shadow:0 3px 10px rgba(0,0,0,.05)">
+      <p style="margin-bottom:10px"><input type="text" id="fbName" placeholder="您的称呼（选填）" style="width:100%;padding:12px;border:1px solid #e8d9c6;border-radius:6px;font-size:15px"></p>
+      <p style="margin-bottom:10px"><input type="tel" id="fbPhone" placeholder="联系电话（选填）" style="width:100%;padding:12px;border:1px solid #e8d9c6;border-radius:6px;font-size:15px"></p>
+      <p style="margin-bottom:14px"><textarea id="fbMsg" rows="5" placeholder="请写下您的意见或建议……" style="width:100%;padding:12px;border:1px solid #e8d9c6;border-radius:6px;font-size:15px;resize:vertical"></textarea></p>
+      <p style="text-align:center"><button class="btn" type="submit">提交意见</button></p>
+    </form>
+  </div>
+</div>
+
 <div class="footer">
   <div class="wrap">
     <div>
@@ -98,5 +108,13 @@
   </div>
 </div>
 
+<script src="js/main.js"></script>
+<script>
+document.getElementById('fbForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('已收到您的意见，感谢您的反馈！');
+  this.reset();
+});
+</script>
 </body>
 </html>
