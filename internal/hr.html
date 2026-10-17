@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人事档案室 - 047店内部办公系统</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="internal" data-gate="staff" data-key="id">
+
+<!-- 047店内网页面，仅限员工访问，链接勿外传。 -->
+
+<div class="topbar">
+  <div class="wrap">
+    <span>咨询热线：0371-66881247</span>
+    <span>地址：建设路112号（阳光小学东侧200米）</span>
+  </div>
+</div>
+
+<div class="header">
+  <div class="wrap">
+    <div class="logo">育儿小饭桌<span>让爱陪伴每一餐</span></div>
+    <div class="nav">
+      <a href="../index.html">首页</a>
+      <a href="../services.html">服务介绍</a>
+      <a href="../menu.html">菜品展示</a>
+      <a href="../feedback.html">家长反馈</a>
+      <a href="../contact.html">联系我们</a>
+    </div>
+  </div>
+</div>
+
+<div class="sys-top">
+  <div class="wrap">
+    <span>047店 · 内部办公系统（内网）</span>
+    <span>当前登录：前台教务 小张　<a href="../staff-login.html">退出</a></span>
+  </div>
+</div>
+
+<div class="sys-main">
+  <div class="sys-title">人事档案室（内网）</div>
+
+  <div class="lock-gate" id="hrBox">
+    <h3>人事档案室（内网）</h3>
+    <div class="sub">员工档案已加密，请输入查阅口令</div>
+    <form id="hrForm">
+      <input id="hpwd" placeholder="请输入口令" autocomplete="off">
+      <button type="submit">确认</button>
+      <div class="err" id="hrErr"></div>
+      <div class="hint" id="hrHint">提示：口令=保育员工号数字（工号见服务介绍页师资团队）。</div>
+    </form>
+  </div>
+
+  <div class="paper" id="hrPaper" style="display:none">
+    <div class="stamp">机 密</div>
+    <h2>员工人事档案 · 工号 YX-009</h2>
+
+    <div class="evi">
+      <h4>入职登记表（摘要）</h4>
+      <p>姓名：刘X　　岗位：保育员　　入职日期：2024年2月</p>
+      <p>身份证号：<span class="bad">一栏涂抹不清，复印件缺失</span>；学历证明：未提交。</p>
+      <p>无犯罪记录证明：<span class="bad">未提交</span>（页边批注：园长批示"先这样"）。</p>
+      <p>紧急联系人电话：档案员抽查拨打，<span class="bad">为空号</span>。</p>
+    </div>
+
+    <div class="evi">
+      <h4>协查通报（文字版 · 打印件夹入档案袋）</h4>
+      <p>2023年邻省特大非法集资案在逃人员：刘某琴，女，案发时49岁，身高约一米六，左眉有旧疤，说话带豫南口音。</p>
+      <p>该员案发后冒用他人身份，长期潜伏于校外托管、家政行业。体貌特征与本店保育员"刘姨"<span class="bad">高度吻合</span>。</p>
+      <p>通报边角有圆珠笔字迹："先别声张，人手正缺。——W"</p>
+    </div>
+
+    <h4>看完这些，你决定：</h4>
+    <a class="opt" href="../ending.html?e=13">A. 整理材料，匿名报警</a>
+    <a class="opt" href="../ending.html?e=14">B. 当面找"刘姨"对质</a>
+    <a class="opt" href="../ending.html?e=15">C. 装作不知道，照常打招呼</a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="wrap">
+    <div>
+      <p>育儿小饭桌托管中心（047店）</p>
+      <p>地址：建设路112号（阳光小学东侧200米）</p>
+      <p>电话：0371-66881247</p>
+    </div>
+    <div>
+      <p>连锁门店编号：No.047</p>
+      <p>服务时间：周一至周五 10:30 - 19:30</p>
+      <p><a class="staff-link" href="../staff-login.html">员工通道</a></p>
+    </div>
+    <div class="copyright">©2015-2026 育儿小饭桌连锁机构 版权所有 · 豫ICP备20261112号</div>
+  </div>
+</div>
+
+<script src="../js/game.js"></script>
+</body>
+</html>
