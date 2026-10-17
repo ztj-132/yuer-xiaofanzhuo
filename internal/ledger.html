@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>爱心募捐内网台账 - 047店内部办公系统</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="internal" data-gate="staff" data-key="money">
+
+<!-- 047店内网页面，仅限员工访问，链接勿外传。 -->
+
+<div class="topbar">
+  <div class="wrap">
+    <span>咨询热线：0371-66881247</span>
+    <span>地址：建设路112号（阳光小学东侧200米）</span>
+  </div>
+</div>
+
+<div class="header">
+  <div class="wrap">
+    <div class="logo">育儿小饭桌<span>让爱陪伴每一餐</span></div>
+    <div class="nav">
+      <a href="../index.html">首页</a>
+      <a href="../services.html">服务介绍</a>
+      <a href="../menu.html">菜品展示</a>
+      <a href="../feedback.html">家长反馈</a>
+      <a href="../contact.html">联系我们</a>
+    </div>
+  </div>
+</div>
+
+<div class="sys-top">
+  <div class="wrap">
+    <span>047店 · 内部办公系统（内网）</span>
+    <span>当前登录：前台教务 小张　<a href="../staff-login.html">退出</a></span>
+  </div>
+</div>
+
+<div class="sys-main">
+  <div class="sys-title">爱心募捐内网台账</div>
+
+  <div class="lock-gate" id="ledgerBox">
+    <h3>爱心募捐内网台账</h3>
+    <div class="sub">财务数据已加密，请输入授权码</div>
+    <form id="ledgerForm">
+      <input id="lpwd" placeholder="请输入口令" autocomplete="off">
+      <button type="submit">确认</button>
+      <div class="err" id="ledgerErr"></div>
+      <div class="hint" id="ledgerHint">提示：授权码=店庆周年数+店庆月份（两位），见店庆新闻。</div>
+    </form>
+  </div>
+
+  <div class="paper" id="ledgerPaper" style="display:none">
+    <div class="stamp">机 密</div>
+    <h2>11周年店庆 · 爱心募捐内网台账</h2>
+
+    <h4>一、公示口径与实际到账对比</h4>
+    <table class="pub-table">
+      <tr><th>项目</th><th>金额</th><th>说明</th></tr>
+      <tr><td>公示口径</td><td>86,520元</td><td>共236笔，公示页显示"全部用于硬件升级"</td></tr>
+      <tr><td>实际到账（对公账户）</td><td>32,100元</td><td>已用于更换部分窗帘与牌匾</td></tr>
+      <tr><td class="bad">差额</td><td class="bad">54,420元</td><td>去向见下表</td></tr>
+    </table>
+
+    <h4>二、差额去向（银行流水摘要）</h4>
+    <table class="pub-table">
+      <tr><th>日期</th><th>金额</th><th>转入账户</th><th>备注栏</th></tr>
+      <tr><td>2026-09-22</td><td>20,000元</td><td>王XX个人账户</td><td>装修款</td></tr>
+      <tr><td>2026-09-25</td><td>18,000元</td><td>王XX个人账户</td><td>个人还款</td></tr>
+      <tr><td>2026-09-30</td><td>16,420元</td><td>王XX个人账户</td><td>借款</td></tr>
+    </table>
+
+    <div class="evi">
+      <h4>财务经办人旁注</h4>
+      <p>"王园长说，明细永远'整理中'。家长问起来，就说钱都花在硬件上了。这三笔，账上不体现。——财务 小孙"</p>
+    </div>
+
+    <h4>看完这些，你决定：</h4>
+    <a class="opt" href="../ending.html?e=7">A. 联合捐款家长，成立查账小组</a>
+    <a class="opt" href="../ending.html?e=8">B. 一个人去店里，要求出示明细</a>
+    <a class="opt" href="../ending.html?e=9">C. 装作没看见，明年继续捐款</a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="wrap">
+    <div>
+      <p>育儿小饭桌托管中心（047店）</p>
+      <p>地址：建设路112号（阳光小学东侧200米）</p>
+      <p>电话：0371-66881247</p>
+    </div>
+    <div>
+      <p>连锁门店编号：No.047</p>
+      <p>服务时间：周一至周五 10:30 - 19:30</p>
+      <p><a class="staff-link" href="../staff-login.html">员工通道</a></p>
+    </div>
+    <div class="copyright">©2015-2026 育儿小饭桌连锁机构 版权所有 · 豫ICP备20261112号</div>
+  </div>
+</div>
+
+<script src="../js/game.js"></script>
+</body>
+</html>
