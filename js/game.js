@@ -5,7 +5,17 @@
   function g(k) { try { return localStorage.getItem(k) === '1'; } catch (e) { return false; } }
   function s(k) { try { localStorage.setItem(k, '1'); } catch (e) {} }
   function q(t) { return location.search.indexOf(t) > -1; }
-  function to404() { location.replace('../404.html'); }
+  function needLogin() {
+    var ov = document.createElement('div');
+    ov.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.55);z-index:99999;display:flex;align-items:center;justify-content:center';
+    ov.innerHTML = '<div style="background:#fff;border-radius:8px;padding:30px 36px;text-align:center;max-width:320px">' +
+      '<div style="font-size:18px;font-weight:bold;margin-bottom:8px">未登录</div>' +
+      '<div style="color:#666;font-size:14px;margin-bottom:18px">该页面为047店内部办公系统，请先通过员工通道验证身份。</div>' +
+      '<a href="../staff-login.html" style="display:inline-block;background:#2b5ea7;color:#fff;padding:9px 26px;border-radius:4px;text-decoration:none">前往员工通道</a>' +
+      '<a href="../index.html" style="display:inline-block;margin-left:12px;color:#888;font-size:13px">返回首页</a>' +
+      '</div>';
+    document.body.appendChild(ov);
+  }
 
   var body = document.body;
   var gate = body.getAttribute('data-gate');
@@ -13,7 +23,7 @@
 
   /* ---- 员工门禁：所有 internal 页面 ---- */
   if (gate === 'staff' || gate === 'summary') {
-    if (!g('xft_staff') && !q('s=ok')) { to404(); return; }
+    if (!g('xft_staff') && !q('s=ok')) { needLogin(); return; }
   }
 
   /* ---- 证据页：记录已收集的钥匙 ---- */
