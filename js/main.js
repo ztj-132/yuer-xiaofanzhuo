@@ -1,4 +1,4 @@
-// 官网通用交互：轮播、模态大图、加载更多、论坛小交互
+﻿// 官网通用交互：轮播、模态大图、加载更多、论坛小交互
 (function () {
   'use strict';
 
@@ -23,7 +23,7 @@
     }, 4000);
   }
 
-  /* ---- 模态框（菜品大图 / 益聪logo） ---- */
+  /* ---- 模态框（菜品大图 / 合作方logo） ---- */
   function bindModal(triggerId, maskId) {
     var t = document.getElementById(triggerId);
     var m = document.getElementById(maskId);
@@ -59,7 +59,7 @@
   var pop = document.getElementById('tagPop');
   if (tag && pop) {
     tag.addEventListener('click', function (e) {
-      try { localStorage.setItem('yc_tag', '1'); } catch (err) {}
+      try { localStorage.setItem('xft_tag', '1'); } catch (err) {}
       pop.style.left = (e.clientX + 12) + 'px';
       pop.style.top = (e.clientY - 36) + 'px';
       pop.style.display = 'block';
@@ -68,3 +68,5 @@
     });
   }
 })();
+
+
